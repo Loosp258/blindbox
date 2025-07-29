@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    // 添加以下两行
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "types": ["node", "react", "react-dom"], // 显式包含node类型
+    "typeRoots": ["node_modules/@types"], // 确保类型查找路径正确
+    "lib": ["dom", "dom.iterable", "esnext"], // 保留浏览器环境必要的lib
+
+    // 确保包含这些基本配置
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noEmit": true,
+
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["src"]
+}

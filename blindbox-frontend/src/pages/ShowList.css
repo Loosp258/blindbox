@@ -1,0 +1,68 @@
+.show-list-container {
+    padding: 24px;
+}
+
+.show-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.show-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.show-card-image {
+    height: 180px;
+    overflow: hidden;
+}
+
+.show-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.show-card:hover .show-card-image img {
+    transform: scale(1.05);
+}
+
+.show-user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.username {
+    margin-left: 8px;
+    font-weight: 500;
+}
+
+.show-item-info {
+    margin-top: 8px;
+}
+
+.show-title-link {
+    color: #333;
+    transition: color 0.2s;
+}
+
+.show-title-link:hover {
+    color: #1890ff;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    gap: 16px;
+}
+
+.page-info {
+    color: #666;
+}

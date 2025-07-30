@@ -20,18 +20,7 @@ const config: MidwayConfig = {
     fileSize: '2mb',
     whitelist: ['.jpg', '.jpeg', '.png', '.gif'],
   },
-  staticFile:{
-    dirs:{
-      default: {
-        prefix:'/',
-        dir:'public',
-      },
-      another:{
-        prefix:'/assets',
-        dir:'public/assets',
-      },
-    }
-  },
+
 
 
   jwt: {
